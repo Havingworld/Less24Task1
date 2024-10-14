@@ -30,7 +30,7 @@ void showStatus(std::string& currentTask, std::map<std::string, std::time_t>& ta
         std::cout << "\"" << currentTask << "\"" << std::endl;
     }
     std::cout << "Completed tasks:" << std::endl;;
-    //auto it = tasks.begin();
+    
     for (auto& it : tasks) {
         std::cout << "\"" << it.first << "\": " << it.second / 3600 << ":" << (it.second % 3600) / 60 << ":" << (it.second % 3600) % 60 << " hours" << std::endl;
     }
